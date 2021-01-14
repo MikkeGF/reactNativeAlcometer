@@ -24,8 +24,6 @@ const DissmissKeyboard = ({ children }) => (
   </TouchableWithoutFeedback>
 );
 
-export default function App() {
-
   let i;
   let bottlesArray = [{ label: '1 bottle', value: 1, icon: () => <Icon name="bottle-soda" size={20} color="#705c30" /> }];
   for (i = 2; i <= 24; i++) {
@@ -43,6 +41,10 @@ export default function App() {
     { label: 'male', value: 0.7 },
     { label: 'female', value: 0.6 }
   ];
+
+export default function App() {
+
+
 
   const [weight, setWeight] = useState(null)
   const [bottles, setBottles] = useState(0)
