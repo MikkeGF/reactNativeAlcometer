@@ -13,7 +13,13 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-dropdown-picker": "^3.7.8",
+    "react-native-paper": "^4.6.0",
+    "react-native-really-awesome-button": "^1.6.0",
+    "react-native-simple-radio-button": "^2.7.4",
+    "react-native-vector-icons": "^7.1.0",
+    "react-native-web": "~0.13.12",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"
