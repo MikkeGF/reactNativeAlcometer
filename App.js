@@ -45,7 +45,6 @@ const DissmissKeyboard = ({ children }) => (
 export default function App() {
 
 
-
   const [weight, setWeight] = useState(null)
   const [bottles, setBottles] = useState(0)
   const [hours, setHours] = useState(0)
@@ -55,7 +54,7 @@ export default function App() {
     <DissmissKeyboard>
       <Container>
         <StatusBar style="auto" />
-        <TextInput placeholder='weight' weight={weight} setWeight={setWeight} />
+        <TextInput placeholder=' Insert weight' weight={weight} setWeight={setWeight} />
         <Dropdown items={bottlesArray} zIndex={6000} setValue={setBottles} placeholder={'Choose bottles'} />
         <Dropdown items={hoursArray} zIndex={5000} setValue={setHours} placeholder={'Choose hours'} />
         <Radio setGender={setGender} radioProps={radioProps} />

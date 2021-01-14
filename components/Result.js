@@ -18,7 +18,7 @@ const Result = ({ result }) => {
             { result < 4.5 ?
                 <ResultText>Promilles {result}</ResultText>
                 :
-                <ResultText>I think you are dead, promilles {result} </ResultText>
+                <ResultText>I think you are dead. Promilles {result} </ResultText>
             }
         </StyledView>
     );

@@ -19,7 +19,6 @@ const handleCalculate = (weight, bottles, hours, gender) => {
     let gramsLeft = grams - burning
     let result = gramsLeft / (weight * gender)
     return (result > 0) ? result.toFixed(2) : 0
-
 }
 
 const Button = ({ weight, bottles, hours, gender }) => {

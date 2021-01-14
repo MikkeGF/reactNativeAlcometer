@@ -1,10 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { TextInput, Text } from 'react-native';
 import styled from 'styled-components/native'
-
-
-
-
 
 const Input = styled(TextInput)`
  height: 50px;
@@ -26,15 +22,15 @@ const Textinput = ({ placeholder, weight, setWeight }) => {
 
     return (
         <>
-                <Input
-                    onChangeText={text => setWeight(text)}
-                    value={weight}
-                    placeholder={placeholder}
-                    textAlign='center'
-                    keyboardType='numeric'
-                    clearTextOnFocus
-                />
-                <StyledText> Person weight {weight} kg</StyledText>
+            <Input
+                onChangeText={text => setWeight(text)}
+                value={weight}
+                placeholder={placeholder}
+                textAlign='center'
+                keyboardType='numeric'
+                clearTextOnFocus
+            />
+            <StyledText> Person weight {weight} kg</StyledText>
         </>
     );
 }

@@ -1,12 +1,10 @@
 import React from 'react'
 import DropDownPicker from 'react-native-dropdown-picker';
 import styled from 'styled-components/native'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const StyledView = styled.View`
     width: 80%;
 `;
-
 
 const Dropdown = ({ items, zIndex, setValue, placeholder }) => {
 
@@ -24,7 +22,5 @@ const Dropdown = ({ items, zIndex, setValue, placeholder }) => {
         </StyledView>
     )
 }
-
-
 
 export default Dropdown;
