@@ -1,3 +1,3 @@
 ## Simple alcometer
 
-<img src='/assets/alcometer.png' width='200'>
+<img src='/assets/alcometer.png' width='400'>
