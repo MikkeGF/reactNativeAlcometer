@@ -1,3 +1,3 @@
 ## Simple alcometer
 
-![image](/assets/alcometer.png)
+<img src='/assets/alcometer.png' width='200'>
