@@ -25,19 +25,19 @@ const DissmissKeyboard = ({ children }) => (
 );
 
   let i;
-  let bottlesArray = [{ label: '1 bottle', value: 1, icon: () => <Icon name="bottle-soda" size={20} color="#705c30" /> }];
+  const bottlesArray = [{ label: '1 bottle', value: 1, icon: () => <Icon name="bottle-soda" size={20} color="#705c30" /> }];
   for (i = 2; i <= 24; i++) {
     let item = { label: `${i} bottles`, value: i, icon: () => <Icon name="bottle-soda" size={20} color="#705c30" /> }
     bottlesArray.push(item)
   }
 
-  let hoursArray = [{ label: '1 hour', value: 1, icon: () => <Icon name="clock" size={20} color="#705c30" /> }]
+  const hoursArray = [{ label: '1 hour', value: 1, icon: () => <Icon name="clock" size={20} color="#705c30" /> }]
   for (i = 2; i <= 24; i++) {
     let item = { label: `${i} hours`, value: i, icon: () => <Icon name="clock" size={20} color="#705c30" /> }
     hoursArray.push(item)
   }
 
-  let radioProps = [
+  const radioProps = [
     { label: 'male', value: 0.7 },
     { label: 'female', value: 0.6 }
   ];
@@ -54,7 +54,7 @@ export default function App() {
     <DissmissKeyboard>
       <Container>
         <StatusBar style="auto" />
-        <TextInput placeholder=' Insert weight' weight={weight} setWeight={setWeight} />
+        <TextInput placeholder='Insert weight' weight={weight} setWeight={setWeight} />
         <Dropdown items={bottlesArray} zIndex={6000} setValue={setBottles} placeholder={'Choose bottles'} />
         <Dropdown items={hoursArray} zIndex={5000} setValue={setHours} placeholder={'Choose hours'} />
         <Radio setGender={setGender} radioProps={radioProps} />
