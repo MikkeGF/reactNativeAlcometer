@@ -12,16 +12,23 @@ const StyledView = styled.View`
 `;
 
 
-const handleCalculate = (weight, bottles, hours, gender) => {
-    let litres = bottles * 0.33
-    let burning = weight / 10 * hours
-    let grams = litres * 8 * 4.5
-    let gramsLeft = grams - burning
-    let result = gramsLeft / (weight * gender)
-    return (result > 0) ? result.toFixed(2) : 0
-}
+
+
+
 
 const Button = ({ weight, bottles, hours, gender }) => {
+
+    const handleCalculate = (weight, bottles, hours, gender) => {
+        let litres = bottles * 0.33
+        let burning = weight / 10 * hours
+        let grams = litres * 8 * 4.5
+        let gramsLeft = grams - burning
+        let result = gramsLeft / (weight * gender)
+        handleResult(result)
+    }
+    const handleResult = (result) => {
+        (result > 0) ? setValue(result.toFixed(2)) : setValue(0)
+    }
 
     const [value, setValue] = useState(0)
 
@@ -32,9 +39,8 @@ const Button = ({ weight, bottles, hours, gender }) => {
                     stretch
                     progress
                     onPress={next => {
-                        result = handleCalculate(weight, bottles, hours, gender)
-                        setValue(result)
-                        next();
+                    handleCalculate(weight, bottles, hours, gender)
+                    next();
                     }}
                 >
                     Calculate
