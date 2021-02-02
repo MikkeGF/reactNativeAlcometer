@@ -44,7 +44,6 @@ const DissmissKeyboard = ({ children }) => (
 
 export default function App() {
 
-
   const [weight, setWeight] = useState(null)
   const [bottles, setBottles] = useState(0)
   const [hours, setHours] = useState(0)
