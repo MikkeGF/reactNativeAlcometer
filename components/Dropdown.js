@@ -7,7 +7,6 @@ const StyledView = styled.View`
 `;
 
 const Dropdown = ({ items, zIndex, setValue, placeholder }) => {
-
     return (
         <StyledView
             style={{zIndex: zIndex}}>
