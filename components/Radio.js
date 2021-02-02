@@ -8,8 +8,6 @@ const StyledView = styled.View`
 
 const Radio = ({ setGender, radioProps }) => {
 
-
-
     return (
         <StyledView>
             <RadioForm

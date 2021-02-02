@@ -11,11 +11,6 @@ const StyledView = styled.View`
     margin: 20px 0px;
 `;
 
-
-
-
-
-
 const Button = ({ weight, bottles, hours, gender }) => {
 
     const handleCalculate = (weight, bottles, hours, gender) => {
