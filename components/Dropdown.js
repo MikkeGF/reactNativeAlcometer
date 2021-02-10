@@ -9,14 +9,14 @@ const StyledView = styled.View`
 const Dropdown = ({ items, zIndex, setValue, placeholder }) => {
     return (
         <StyledView
-            style={{zIndex: zIndex}}>
+            style={{ zIndex: zIndex }}>
             <DropDownPicker
                 items={items}
-                containerStyle={{height: 40, marginBottom: 20, zIndex: 1}}
-                itemStyle={{justifyContent: 'flex-start'}}
+                containerStyle={{ height: 40, marginBottom: 20 }}
+                itemStyle={{ justifyContent: 'flex-start' }}
                 placeholder={placeholder}
                 onChangeItem={item => setValue(item.value)}
-                labelStyle={{color: '#0e4f88'}}
+                labelStyle={{ color: '#0e4f88' }}
             />
         </StyledView>
     )
