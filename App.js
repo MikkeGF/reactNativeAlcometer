@@ -49,7 +49,6 @@ export default function App() {
     }
     setBottleArray(bottleArray)
 
-    hoursArr = []
     for (i = 2; i <= 24; i++) {
       hourArray.push({ label: `${i} hours`, value: i, icon: () => <Icon name="clock" size={20} color="#705c30" /> })
     }
